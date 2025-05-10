@@ -1,0 +1,6 @@
+.err
+.out
+faiss_indexes
+__pycache__/
+*.faiss
+*.npy

@@ -1,0 +1,49 @@
+syntax = "proto3";
+package faiss_dist;
+
+service FaissService {
+  rpc SendShard(stream ShardRequest) returns (ShardResponse);
+  rpc TrainIndex(TrainRequest) returns (TrainResponse);
+  rpc SearchBatch(SearchBatchRequest) returns (SearchBatchResponse);
+}
+
+message ShardRequest {
+  repeated float data = 1;
+  int32 dim = 2;
+  int32 cluster_id = 3; 
+}
+
+message ShardResponse {
+  bool ok = 1;
+}
+
+message TrainRequest {
+  int32 nlist = 1;
+  int32 cluster_id = 2; 
+}
+
+message TrainResponse {
+  bool   ok = 1;
+  string error = 2;
+}
+
+message SearchRequest {
+  int32 cluster_id = 1;
+  repeated float query_vector = 2;
+  int32 k = 3;
+  int32 nprobe = 4;
+}
+
+message SearchBatchRequest {
+  repeated SearchRequest requests = 1;
+}
+
+message SearchResponse {
+  repeated float distances = 1;
+  repeated int64  indices = 2;
+  string error_message = 3;
+}
+
+message SearchBatchResponse {
+  repeated SearchResponse responses = 1;
+}

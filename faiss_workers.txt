@@ -1,0 +1,12 @@
+holy7c10307.rc.fas.harvard.edu:50051:faiss_indexes/shard_3.ivf
+holy7c02510.rc.fas.harvard.edu:50051:faiss_indexes/shard_1.ivf
+holy7c02509.rc.fas.harvard.edu:50051:faiss_indexes/shard_0.ivf
+holy7c10203.rc.fas.harvard.edu:50051:faiss_indexes/shard_2.ivf
+holy7c02112.rc.fas.harvard.edu:50051:faiss_indexes/shard_3.ivf
+holy7c02110.rc.fas.harvard.edu:50051:faiss_indexes/shard_1.ivf
+holy7c02109.rc.fas.harvard.edu:50051:faiss_indexes/shard_0.ivf
+holy7c02111.rc.fas.harvard.edu:50051:faiss_indexes/shard_2.ivf
+holy7c02112.rc.fas.harvard.edu:50051:faiss_indexes/shard_2.ivf
+holy7c02110.rc.fas.harvard.edu:50051:faiss_indexes/shard_0.ivf
+holy7c02111.rc.fas.harvard.edu:50051:faiss_indexes/shard_1.ivf
+holy7c02201.rc.fas.harvard.edu:50051:faiss_indexes/shard_3.ivf
